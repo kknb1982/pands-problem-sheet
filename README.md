@@ -6,13 +6,13 @@ My name is Kirstin Barnett and I am currently studying a part-time course on Com
 ## File contents
  File name | Summary          |
 |---------:|------------------|
-|         |        Javascript|
+|helloworld.py |Simple program that prints out "Hello World!"|
 |     
 |      
-## Week01
-<details>
-  <summary> Setting up our working environment and learning to write our first small program <summary>
-    helloworld.py
+## Week01: Introduction
+Setting up our working environment and learning to write our first small program 
+ <details>
+  <summary>  helloworld.py <summary>
 <details>
 
 ## Week02
