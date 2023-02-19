@@ -12,8 +12,8 @@ My name is Kirstin Barnett and I am currently studying a part-time course on Com
 ## Week01: Introduction
 Setting up our working environment and learning to write our first small program 
  <details>
-  <summary>  helloworld.py <summary>
-<details>
+  <summary>  helloworld.py </summary>
+</details>
 
 ## Week02
 
