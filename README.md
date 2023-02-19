@@ -119,13 +119,8 @@ line 12: prints out 'X' instead of the first numbers in the string and only show
 ## Week04
 
 <details>
-  <summary>   </summary>
-</details>
-
-
-<details>
-  <summary>   lab4.1.2.grade.py: Reads in a percentage and outputs the corresponding grade</summary>
-  line 4: Asks for the score to be input
+  <summary> lab4.1.2.grade.py: Reads in a percentage and outputs the corresponding grade  </summary>
+ line 4: Asks for the score to be input
   line 6: Checks if the number input is between 0 and 100. If not line 7 is run.
   line 7: Requests a score between 0 and 100.
   lines 9 to 18 are run on any number between 0 and 100. Once an elif function (else if is met) the program stops.
@@ -139,14 +134,14 @@ line 12: prints out 'X' instead of the first numbers in the string and only show
 </details>
 
 <details> 
-<summmary> lab.4.2.1.evens.py: uses a while loop to print even numbers from 2 to 100 <\summary>
+  <summmary> lab.4.2.1.evens.py: uses a while loop to print even numbers from 2 to 100 </summary>
  line 5: creates a variable to limit the while loop. This variable will set when the loop ends.
  line 6: creates the variable on which the loop iterates.
  line 8: create the while loop to say whilst the even_number variable is less than the number_to variable complete the operation which is described in lines 9 and 10.
  line 9: print the value of the even number variable.
  line 10: increase the value of even_number by 2.
  Lines 8 to 10 will re-run until the value of number_to variable is met.
-<\details>
+</details>
 
 <details>
   <summary> lab4.2.2.guess: Asks the user to guess the number until they get it right </summary>
@@ -160,7 +155,7 @@ line 12: prints out 'X' instead of the first numbers in the string and only show
  </details>
  
  <details>
-   <summary> lab4.2.3.guess2.py: Asks the user to guess the number until they get it right, they get told if each guess is too high or too low. <\summary>
+   <summary> lab4.2.3.guess2.py: Asks the user to guess the number until they get it right, they get told if each guess is too high or too low. </summary>
    line 6: sets the number to guess
    line 8: asks the user to insert the next guess
    lines 9 to 14: is the while loop with nested if and else functions.
@@ -169,11 +164,11 @@ line 12: prints out 'X' instead of the first numbers in the string and only show
    line 12: we know the guess cannot equal or be less than the number_to_guess variable so we use the else function to say "too high".
    line 14: requests a new number
    line 16: when a correct guess is entered this line is printed.
-   <\details>
+   </details>
   
   <details>
-   <summary> lab4.2.4.guess3.py: Prompts a user to guess a random number between 1 and 100 until they get it right with too high and too low prompts <\summary>
+   <summary> lab4.2.4.guess3.py: Prompts a user to guess a random number between 1 and 100 until they get it right with too high and too low prompts </summary>
    repeats the code in lab.4.2.3.guess2.py but includes a change at lines 6 and 7 to create a random number between 1 and 100 as the number to guess.
    line 6: imports to random module
    line 7: asks random to call a random integer between 1 and 100.
-   <\details>
+   </details>
