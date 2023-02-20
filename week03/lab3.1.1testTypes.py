@@ -1,5 +1,6 @@
 # To play with variable types in Python
 # Author: Kirstin Barnett
+# based on code from Andrew Beatty
  
 i = 3
 fl = 3.5
