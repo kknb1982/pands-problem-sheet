@@ -1,4 +1,4 @@
-# On reading a number prints out one more than the number
+# On reading in a number prints out one more than the number
 # Author: Kirstin Barnett
 
 number = int(input('Please enter a number: '))
