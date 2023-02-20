@@ -1,4 +1,4 @@
-# This program prints out hello world
+# This program prints out Kirstin
 # Author: Kirstin Barnett
 
 print("Kirstin")
