@@ -1,18 +1,18 @@
 # pands-problem-sheet
 
-## About me
+# About me
 My name is Kirstin Barnett and I am currently studying a part-time course on Computer Science and Data Analytics with ATU Galway. Prior to this course I had written basic VBA scripts in Excel and down a small amount of online learning about Python. This repository and readme relates to my coursework with ATU Galway.
 
-## File contents
+# File contents
 |File name | Summary          |
 |---------:|------------------|
-|helloworld.py |Simple program that prints out "Hello World!"|
-|addOne.py|  |
-|bank.py|  |
-|hello.py|  |
-|hello2.py|  |
-|multiply.py|  |
-|nameAndAge.py|  |
+|lab1.1.1.helloworld.py [# |Simple program that prints out "Hello World!"|
+|lab2.2.1.hello.py|Prints out Kirstin  |
+|lab2.2.2.multiply.py| Simple multiplier |
+lab2.2.3.hello2.py| input a name and says hello |
+|lab2.2.4.addOne.py|  |
+|lab2.2.5.nameAndAge.py|  |
+|lab2.2.6.bank.py| |
 |accounts.py|Reads in an account number but only shows the last 4 digits|
 |lab3.1.div.py|Divides one number by another and gives the integer and remainder |
 |lab3.1.randomGenerator.py| |
@@ -31,38 +31,26 @@ My name is Kirstin Barnett and I am currently studying a part-time course on Com
 |lab4.2.3.guess2.py|prompts a user to guess a number until they get it right with too high and too low prompts|
 |lab4.2.4.guess3.py|prompts a user to guess a random number between 1 and 100 until they get it right with too high and too low prompts|
 
-## Week01: Introduction
+# Week01: Introduction
 Setting up our working environment and learning to write our first small program 
- <details>
-  <summary>  helloworld.py </summary>
-</details>
+## lab1.1.1.helloworld.py: Prints out "Hello World!" 
+  Simple program introducing the print command.
 
-## Week02
-<details>
-  <summary>  addOne.py </summary>
-</details>
+# Week02
+## lab2.2.1.hello.py:Prints out Kirstin
+    Simple program learning to change the command to print out a required value, in this case my name.
 
- <details>
-  <summary>  bank.py </summary>
-</details>
+## lab2.2.2.multiply.py: Simple multiplier
 
- <details>
-  <summary>  hello.py </summary>
-</details>
+## lab2.2.3.hello2.py: input a name and says hello
+ 
+## lab2.2.4.addOne.py
 
- <details>
-  <summary>  hello2.py </summary>
-</details>
+## lab2.2.5.nameAndAge.py
 
- <details>  <summary>  multiply.py </summary>
-</details>
+## lab2.2.6.bank.py
 
- <details>
-  <summary>  nameAndAge.py </summary>
-</details>
-
-
-## Week03
+# Week03
 <details>
   <summary>  accounts.py: Reads in an account number but only shows the last 4 digits</summary>
   A program that reads in an account number and only shows the last 4 digits the rest replaced by x. 
@@ -116,7 +104,7 @@ line 12: prints out 'X' instead of the first numbers in the string and only show
   <summary> lab3.3.normalise.py  </summary>
 </details>
 
-## Week04
+# Week04
 
 <details>
   <summary> lab4.1.2.grade.py: Reads in a percentage and outputs the corresponding grade  </summary>
