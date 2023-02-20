@@ -6,18 +6,18 @@ My name is Kirstin Barnett and I am currently studying a part-time course on Com
 # File contents
 |File name | Summary          |
 |---------:|------------------|
-|[lab1.1.1.helloworld.py] ((https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab111helloworldpy-prints-out-hello-world) |Simple program that prints out "Hello World!"|
-|lab2.2.1.hello.py|Prints out Kirstin  |
-|lab2.2.2.multiply.py| Simple multiplier |
-lab2.2.3.hello2.py| input a name and says hello |
-|lab2.2.4.addOne.py|  |
-|lab2.2.5.nameAndAge.py|  |
-|lab2.2.6.bank.py| |
-|[lab3.1.1testTypes.py]| play with variable types in Python|
-|lab3.1.2.sub.py|subtract one number from another |
-|[lab3.1.3.div.py] (https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab313divpy-divides-one-number-by-another-and-gives-the-integer-and-remainder)|Divides one number by another and gives the integer and remainder |
-|[lab3.1.4.randomGenerator.py]|Prints out a random number between 1 and 10 |
-|lab3.2.1.round.py|Input a float and output it rounded to an integer |
+|[lab1.1.1.helloworld.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab111helloworldpy-prints-out-hello-world) |Simple program that prints out "Hello World!"|
+|[lab2.2.1.hello.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab221hellopy-prints-out-kirstin)|Prints out Kirstin  |
+|[lab2.2.2.multiply.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab222multiplypy-simple-multiplier)| Simple multiplier |
+|[lab2.2.3.hello2.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab223hello2py-input-a-name-and-says-hello)| Input a name and says hello |
+|[lab2.2.4.addOne.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab224addonepy-on-reading-in-a-number-prints-out-one-more-than-the-number)| On reading in a number prints out one more than the number|
+|[lab2.2.5.nameAndAge.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab225nameandagepy-reads-in-a-name-and-age-and-outputs-a-sentence)| Reads in a name and age and outputs a sentence|
+|[lab2.2.6.bank.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab226bankpy-adds-two-user-entered-amounts-and-prints-them-in-a-readable-format)| Adds two user entered amounts and prints them in a readable format |
+|[lab3.1.1testTypes.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab311testtypespy-play-with-variable-types-in-python)| Play with variable types in Python|
+|[lab3.1.2.sub.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab312subpy-subtracts-one-number-from-another)|Subtracts one number from another |
+|[lab3.1.3.div.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab313divpy-divides-one-number-by-another-and-gives-the-integer-and-remainder)|Divides one number by another and gives the integer and remainder |
+|[lab3.1.4.randomGenerator.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab314randomgeneratorpy-prints-out-a-random-number-between-1-and-10)|Prints out a random number between 1 and 10 |
+|[lab3.2.1.round.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab321roundpy-input-a-float-and-output-it-rounded-to-an-integer)|Input a float and output it rounded to an integer |
 |lab3.2.1.absolute.py|Gives the absolute value of a number|
 |lab3.2.2.floor.py|Floors a number |
 |lab3.2.3.absolutedollars.py| Returns the abolute amount of money input in cents|
@@ -25,18 +25,6 @@ lab2.2.3.hello2.py| input a name and says hello |
 |lab3.3.1.length.py| Returns the length of an entered string |
 |lab3.3.2.normalise.py| Strips leading and trailing spaces of an entered string and prints it lower case |
 |accounts.py|Reads in an account number but only shows the last 4 digits|
-
-
-
-
-
-
-
-
-
-
-
-
 |lab4.1.1.is_even.py| |
 |lab4.1.2.grade.py| |
 |lab 4.2.1.evens.py|uses a while loop to print even numbers from 2 to 100|
@@ -46,30 +34,42 @@ lab2.2.3.hello2.py| input a name and says hello |
 
 # Week01: Introduction
 Setting up our working environment and learning to write our first small program 
+
 ## lab1.1.1.helloworld.py: Prints out "Hello World!" 
-  Simple program introducing the print command.
+Simple program introducing the print command.
 
 # Week02
-## lab2.2.1.hello.py:Prints out Kirstin
-    Simple program learning to change the command to print out a required value, in this case my name.
+## lab2.2.1.hello.py: Prints out Kirstin
+Simple program learning to change the command to print out a required value, in this case my name.
 
 ## lab2.2.2.multiply.py: Simple multiplier
 
-## lab2.2.3.hello2.py: input a name and says hello
+## lab2.2.3.hello2.py: Input a name and says hello
  
-## lab2.2.4.addOne.py
+## lab2.2.4.addOne.py: On reading in a number prints out one more than the number
+Uses code from Andrew Beatty
+Requests the input of a number, adds 1 to it and the uses `f` string to print out the answer.
 
-## lab2.2.5.nameAndAge.py
+## lab2.2.5.nameAndAge.py: Reads in a name and age and outputs a sentence
+Uses code from Andrew Beatty. Uses `\t` in a string to insert a tab.
 
-## lab2.2.6.bank.py
+## lab2.2.6.bank.py: Adds two user entered amounts and prints them in a readable format
+Requests two user entered amounts and stores them as integers. Adds the two amounts together and divides them by 100 to give the integer in dollars and cents.
 
 # Week03
-## lab3.1.1testTypes.py
+## lab3.1.1testTypes.py: Play with variable types in Python
+Uses code from Andrew Beatty.
 
-## lab3.1.2.sub.py: Subtract one number from another
+Looks at integer, float, boolean, string and list variables.
+
+## lab3.1.2.sub.py: Subtracts one number from another
+Uses code from Andrew Beatty.
+
 A simple program that requests two integer inputs and uses `f` to print the inputs and the answer.
 
 ## lab3.1.3.div.py: Divides one number by another and gives the integer and remainder
+Uses code from Andrew Beatty. 
+
 A simple program that requests the input of two integers, divides one by the other to give the integer result of the dvision and the remainder (`x%y`). `f` string is used to print out the result.
 
 ## lab3.1.4.randomGenerator.py: Prints out a random number between 1 and 10
@@ -99,12 +99,12 @@ Based on code from Andrew Beatty.
 Uses `len` to return the length of an entered string.
 
 ## lab3.3.2.normalise.py: Strips leading and trailing spaces of an entered string and prints it lower case
-  Uses code from Andrew Beatty
+Uses code from Andrew Beatty
 
-  Requests the input of a string, uses the functions `.strip().lower()` on the variable name to strip leading and trailing spaces and to make the string lower case.
+Requests the input of a string, uses the functions `.strip().lower()` on the variable name to strip leading and trailing spaces and to make the string lower case.
 
 ## accounts.py: Reads in an account number but only shows the last 4 digits
-  A program that reads in an account number and only shows the last 4 digits the rest replaced by x. 
+A program that reads in an account number and only shows the last 4 digits the rest replaced by x. 
   
 line 5: Requests an account number. If the account number is less than 5 digits the full account number would show so the program could be altered with an if statement to say, if the number entered is less than, say, 6 digits say "please enter an account number of 6 digits or greater".
 
