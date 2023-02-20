@@ -1,5 +1,6 @@
-# prints out a random number between 1 and 10
+# Prints out a random number between 1 and 10
 # Author: Kirstin Barnett
+# Based on code from Andrew Beatty
 
 import random
 x = int(input ("What is the lower limit of the range: "))
