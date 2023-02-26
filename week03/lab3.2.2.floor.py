@@ -1,5 +1,6 @@
 # Floors a number
 # Author: Kirstin Barnett
+# Based on code by Andrew Beatty
 
 import math
 number_to_floor = float(input("Input a float number: "))
