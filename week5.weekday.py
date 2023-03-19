@@ -9,7 +9,8 @@ day = today.strftime("%a")
 if day == "Sun":
     print ("It is the weekend, yay!")
 
-if day == "Sat":
+elif day == "Sat":
     print ("It is the weekend, yay!")
 
-print  ("Yes, unfortunately today is a weekday.")
+else:
+    print ("Yes, unfortunately today is a weekday.")

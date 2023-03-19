@@ -1,4 +1,5 @@
 # A program that reads in an account number and only shows the last 4 digits the rest replaced by x
+# If a number shorter than 5 digits is entered the full number will be shown and this will be insecure
 # Author: Kirstin Barnett
 
 bank_account_number = input("Please enter an account number: ")
