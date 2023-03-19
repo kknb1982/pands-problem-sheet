@@ -17,5 +17,7 @@ number = int(input ("Please enter a positive integer?: "))
 while number != 1:
     numbers.append(number)
     number = collatz(number)
-    
-print(numbers, end=" ")
+else:
+    numbers.append(number) 
+
+print(*numbers)

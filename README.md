@@ -7,30 +7,8 @@ My name is Kirstin Barnett and I am currently studying a part-time course on Com
 |File name | Summary          |
 |---------:|------------------|
 |[lab1.1.1.helloworld.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab111helloworldpy-prints-out-hello-world) |Simple program that prints out "Hello World!"|
-|[lab2.2.1.hello.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab221hellopy-prints-out-kirstin)|Prints out Kirstin  |
-|[lab2.2.2.multiply.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab222multiplypy-simple-multiplier)| Simple multiplier |
-|[lab2.2.3.hello2.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab223hello2py-input-a-name-and-says-hello)| Input a name and says hello |
-|[lab2.2.4.addOne.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab224addonepy-on-reading-in-a-number-prints-out-one-more-than-the-number)| On reading in a number prints out one more than the number|
-|[lab2.2.5.nameAndAge.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab225nameandagepy-reads-in-a-name-and-age-and-outputs-a-sentence)| Reads in a name and age and outputs a sentence|
 |[lab2.2.6.bank.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab226bankpy-adds-two-user-entered-amounts-and-prints-them-in-a-readable-format)| Adds two user entered amounts and prints them in a readable format |
-|[lab3.1.1testTypes.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab311testtypespy-play-with-variable-types-in-python)| Play with variable types in Python|
-|[lab3.1.2.sub.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab312subpy-subtracts-one-number-from-another)|Subtracts one number from another |
-|[lab3.1.3.div.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab313divpy-divides-one-number-by-another-and-gives-the-integer-and-remainder)|Divides one number by another and gives the integer and remainder |
-|[lab3.1.4.randomGenerator.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab314randomgeneratorpy-prints-out-a-random-number-between-1-and-10)|Prints out a random number between 1 and 10 |
-|[lab3.2.1.round.py](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#lab321roundpy-input-a-float-and-output-it-rounded-to-an-integer)|Input a float and output it rounded to an integer |
-|lab3.2.1.absolute.py|Gives the absolute value of a number|
-|lab3.2.2.floor.py|Floors a number |
-|lab3.2.3.absolutedollars.py| Returns the abolute amount of money input in cents|
-|lab3.3.1.length.py| Returns the length of an entered string |
-|lab3.3.1.length.py| Returns the length of an entered string |
-|lab3.3.2.normalise.py| Strips leading and trailing spaces of an entered string and prints it lower case |
 |accounts.py|Reads in an account number but only shows the last 4 digits|
-|lab4.1.1.is_even.py| |
-|lab4.1.2.grade.py| |
-|lab 4.2.1.evens.py|uses a while loop to print even numbers from 2 to 100|
-|lab4.2.2.guess.py| prompts a user to guess a number until they get it right|
-|lab4.2.3.guess2.py|prompts a user to guess a number until they get it right with too high and too low prompts|
-|lab4.2.4.guess3.py|prompts a user to guess a random number between 1 and 100 until they get it right with too high and too low prompts|
 
 # Week01: Introduction
 Setting up our working environment and learning to write our first small program 
