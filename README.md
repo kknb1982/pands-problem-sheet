@@ -23,7 +23,7 @@ The program uses numpy to call normal distribution data for the histogram
 ### Using the code
 ### References
 
-## week 2 - Adds two user entered amounts and prints them in a readable format
+## Week 2 - Adds two user entered amounts and prints them in a readable format
 ### Description
 This program requests that the user enters two amounts in cents, adds these two numbers together and outputs them as €xxx.xx.
 
@@ -61,7 +61,7 @@ https://www.w3schools.com/python/python_strings_slicing.asp
 ### Description
 The programe codes the Collatz conjecture by defining a function to run the Collatz conjecture and uses a while loop to record the numbers tested and stop the function once an output of 1 is calculated. The numbers run through the function are recorded in a list and printed once the script has completed.
 
-### Using the code
+### The code
 First an empty list is recorded to store the outputs from the script:
 `numbers = []`
 
@@ -91,10 +91,30 @@ Once the number 1 is reached all the numbers in the list are printed:
 
 ### References
 
-## Week 5
+## Week 5 - Using import to work out if today is a weekday
 ### Description
-### Using the code
+The program imports the date from the python module datetime, calucates the day of the week from this and outputs whether today is a weekend day or not.
+
+### The code
+First the date is imported from the Python module datetime 
+`from datetime import date`
+
+The today's date is recorded in a variable called today.
+`today = date.today()`
+
+The `strftime` method is then used to output the day in the short day format `("%a")`. The result of this is recorded in the variable day.
+`day = today.strftime("%a")`
+
+
+if day == "Sun":
+    print ("It is the weekend, yay!")
+
+if day == "Sat":
+    print ("It is the weekend, yay!")
+
+print  ("Yes, unfortunately today is a weekday.")
 ### References
+https://www.w3schools.com/python/python_datetime.asp
 
 ## Week 6
 ### Description
