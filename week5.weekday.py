@@ -1,15 +1,11 @@
-# Outputs whether today is a weekday or not
+# Outputs whether today is a weekday or not and prints out appropriate text
 # Author: Kirstin Barnett
 
 from datetime import date
 today = date.today()
+day = today.weekday()
 
-day = today.strftime("%a")
-
-if day == "Sun":
-    print ("It is the weekend, yay!")
-
-elif day == "Sat":
+if day > 4:
     print ("It is the weekend, yay!")
 
 else:
