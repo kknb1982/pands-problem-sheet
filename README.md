@@ -1,20 +1,15 @@
 # pands-problem-sheet
 
 # Contents
-<<<<<<< HEAD
-
-## Week 08 - Plotting Data
-This program creates one figure that plots two data sets: (1) a histogram of the normal distribution of 1000 values with a mean of 5 and standard deviation of 2 adn (2) a line showing h(x) = x^3
-
-The program uses numpy to call normal distribution data for the histogram
-
-: Project Title
-=======
 |Week|File name|Description|
 |--|-------|--------|
 |01||wee2.bank.py| Adds to user entered integers and ouputs them in euro and cents|
 |03|week3.accounts.py|Hiding part of bank account numbers|
 |04|week4.collatz.py|Coding the collatz conjecture|
+|05|week5.weekday.py|Outputs whether today is a weekday or not and prints out appropriate text|
+|06|week6.sqrt.py|Finds an approximation of the square root of a positive float number|
+|07|week7.files.py|Counting the occurence of a character in a file|
+|08|week8.plottask.py|Plot of the normal distribution and a cubing function|
 
 
 # Projects
@@ -102,35 +97,68 @@ First the date is imported from the Python module datetime
 The today's date is recorded in a variable called today.
 `today = date.today()`
 
-The `strftime` method is then used to output the day in the short day format `("%a")`. The result of this is recorded in the variable day.
-`day = today.strftime("%a")`
+The day is then recorded in a variable called today. 
+`day = today.weekday()`
 
+This outputs the day as a number, Saturday is day 5 and Sunday is day 6. Therefore, if the variable day is greater than 4 it must be a weekend. An if statement is used to print a message if it is the weekend.
+`if day > 4:
+    print ("It is the weekend, yay!")`
+    
+Otherwise the program prints "Yes, unfortunately today is a weekday."
+`else:
+    print ("Yes, unfortunately today is a weekday.")`
 
-if day == "Sun":
-    print ("It is the weekend, yay!")
-
-if day == "Sat":
-    print ("It is the weekend, yay!")
-
-print  ("Yes, unfortunately today is a weekday.")
 ### References
 https://www.w3schools.com/python/python_datetime.asp
 
-## Week 6
+## Week 6 - Finds an approximation of the square root of a positive float number
 ### Description
-### Using the code
+This programe uses the Newton method to estimate the square root of a number to a defined tolerance. The user is asked to input both the number to estimate the square root of and the tolerance.
+
+### The code
+`def square_root(number,tolerance):
+    guess = number
+        
+    while True:
+        better_guess = (guess + number/guess)/2
+        if abs (better_guess - guess) < tolerance:
+            return better_guess
+        guess = better_guess
+
+
+number = float(input ("Enter a number: "))
+tolerance = float(input("Enter the tolerance: "))
+
+best_guess = square_root(number,tolerance)
+print (f"The Newton approximation of the sqare root of {number} is {best_guess}")`
+
 ### References
 
-## Week 7
+## Week 7 - Counting the occurence of a character in a file
 ### Description
-### Using the code
+This program opens a text file specificied by the user and counts the number of occurrences of the character e within it. The programme only works with text files. The file name can be user only when it exists in the same directory as the python program file, otherwise the full address of the file should be inserted.
+
+### The code
+
+Character = "e"
+FILENAME = input(f"What file would you like to count occurences of '{character}' in?: ")
+
+def number():
+    with open(FILENAME) as f:
+        data = f.read()
+        lower_case = data.lower()
+        occurences = lower_case.count(character)
+        return occurences
+
+number_of_es = number()
+print (f"In the file {FILENAME} there are {number_of_es} occurences of the character '{character}'.")
 ### References
+https://www.geeksforgeeks.org/how-to-read-from-a-file-in-python/
 
 ## Week 8
 ### Description
 ### Using the code
 ### References
->>>>>>> d7ad6f3a5383c88161bea48fecf0f9b89db8ba58
 2: Project Description
 - What the program/application is going does
 - Why you used certain codes (similar to the comments in the file - explain why you wrote it that way - shows you understand what code you used too)
@@ -138,8 +166,4 @@ https://www.w3schools.com/python/python_datetime.asp
 3: Table of Contents (only if its very long code - eg: End of Semester Project)
 4: How to Run or Install the code - we dont need this probably until later
 5: How to use the code - Screenshots of the program running eg: picture of the code and what it results in
-<<<<<<< HEAD
 6: References - any links from what you found when googling for help with code or when looking to see how things are coded. - Even qualified programmers/data analysts google a lot, and were not being told how to do everything because they're trying to teach us how to research as well.
-=======
-6: References - any links from what you found when googling for help with code or when looking to see how things are coded. - Even qualified programmers/data analysts google a lot, and were not being told how to do everything because they're trying to teach us how to research as well.
->>>>>>> d7ad6f3a5383c88161bea48fecf0f9b89db8ba58
