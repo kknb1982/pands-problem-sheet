@@ -136,24 +136,50 @@ print (f"The Newton approximation of the sqare root of {number} is {best_guess}"
 
 ## Week 7 - Counting the occurence of a character in a file
 ### Description
-This program opens a text file specificied by the user and counts the number of occurrences of the character e within it. The programme only works with text files. The file name can be user only when it exists in the same directory as the python program file, otherwise the full address of the file should be inserted.
+This program opens a text file specificied by the user in the command line and counts the number of occurrences of the character e within it. The programme only works with text-based files. The file name can be used only when it exists in the same directory as the python program file, otherwise the full address of the file should be inserted.
 
 ### The code
+This program starts by importing the sys module and then bringing in the file name to be searched from the command line. `sys.argv[1]` denotes the second argument as the file to assign to the variable FILENAME.
+ `import sys
+FILENAME = sys.argv[1]`
 
-Character = "e"
-FILENAME = input(f"What file would you like to count occurences of '{character}' in?: ")
+The character to be searched for is set in the variable character.
+`character = "e"`
 
-def number():
+Then the function number is defined:
+`def number():
     with open(FILENAME) as f:
         data = f.read()
         lower_case = data.lower()
         occurences = lower_case.count(character)
-        return occurences
+        return occurences`
+        
+This function opens the file to be searched, reads in the text, converts it to lower case and then counts the number of times the variable `character` occurs.
 
-number_of_es = number()
-print (f"In the file {FILENAME} there are {number_of_es} occurences of the character '{character}'.")
+When opening the file to be searched a number of errors may be encountered so a series of try and except statements have been written. The `try` statement chacks that the file can be opened and read. If it can the program moves to the else statement. 
+
+`try:
+    with open(FILENAME) as f:
+        data = f.read()`
+
+If the file cannot be found some helpful information is printed out to remind the user that if the file is not in same folder as programme the full address of the file is needed.
+
+`except FileNotFoundError:
+     print ("Check the spelling of the file name. \nIf the file is not in the same folder as the sys.py program please enter the full address of the file.")`
+     
+If a different type of error occurs the detail of the error is printed to the user:
+`except Exception as e:
+    print (f"Something has gone wrong. Here is the error information: \n{e}")`
+
+If the file can be opened and read the else statement is run. This runs the `number` function and prints out the number of types the requested character occurs in the file.
+
+`else:
+    number_of_es = number()
+    print (f"In the file {FILENAME} there are {number_of_es} occurences of the character '{character}'.")`
+
 ### References
 https://www.geeksforgeeks.org/how-to-read-from-a-file-in-python/
+https://stackoverflow.com/questions/1483429/how-do-i-print-an-exception-in-python
 
 ## Week 8
 ### Description
