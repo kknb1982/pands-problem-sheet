@@ -3,7 +3,7 @@
 # Contents
 |Week|File name|Description|
 |--|-------|--------|
-|[01](# Week-1)|
+|[Week01](#Week01)|
 |wee2.bank.py| Adds to user entered integers and ouputs them in euro and cents|
 |03|week3.accounts.py|Hiding part of bank account numbers|
 |04|week4.collatz.py|Coding the collatz conjecture|
@@ -15,7 +15,7 @@
 
 # Projects
 ## Week 1
-#<a name="01"></a> Week 1
+#<a name="Week01"></a> Week01
 ### Description
 ### Using the code
 ### References
