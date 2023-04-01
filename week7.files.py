@@ -25,5 +25,5 @@ except Exception as e:
 
 else:
     number_of_es = number()
-    print (f"In the file {FILENAME} there are {number_of_es} occurences of the character '{character}'.")g
+    print (f"In the file {FILENAME} there are {number_of_es} occurences of the character '{character}'.")
 
