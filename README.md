@@ -3,19 +3,18 @@
 # Contents
 |Week|File name|Description|
 |--|-------|--------|
-|[Week01](#Week01)|
-|wee2.bank.py| Adds to user entered integers and ouputs them in euro and cents|
-|03|week3.accounts.py|Hiding part of bank account numbers|
-|04|week4.collatz.py|Coding the collatz conjecture|
-|05|week5.weekday.py|Outputs whether today is a weekday or not and prints out appropriate text|
-|06|week6.sqrt.py|Finds an approximation of the square root of a positive float number|
-|07|week7.files.py|Counting the occurence of a character in a file|
-|08|week8.plottask.py|Plot of the normal distribution and a cubing function|
+|[01](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#week-1)| lab1.1.1.helloworld.py|Prints out hello world|
+|[02](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#week-2---adds-two-user-entered-amounts-and-prints-them-in-a-readable-format)|week2.bank.py| Adds two user entered integers and ouputs them in euro and cents|
+|[03](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#week-3---hiding-part-of-bank-account-numbers)|week3.accounts.py|Hiding part of bank account numbers|
+|[04](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#week-4---coding-the-collatz-conjecture)|week4.collatz.py|Coding the collatz conjecture|
+|[05](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#week-5---using-import-to-work-out-if-today-is-a-weekday)|week5.weekday.py|Outputs whether today is a weekday or not and prints out appropriate text|
+|[06](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#week-6---finds-an-approximation-of-the-square-root-of-a-positive-float-number)|week6.sqrt.py|Finds an approximation of the square root of a positive float number|
+|[07](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#week-7---counting-the-occurence-of-a-character-in-a-file)|week7.files.py|Counting the occurence of a character in a file|
+|[08](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#week-8)|week8.plottask.py|Plot of the normal distribution and a cubing function|
 
 
 # Projects
 ## Week 1
-#<a name="Week01"></a> Week01
 ### Description
 ### Using the code
 ### References
