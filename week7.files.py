@@ -3,8 +3,8 @@
 
 import sys
 
-character = "e"
 FILENAME = sys.argv[1]
+character = "e"
 
 def number():
     with open(FILENAME) as f:
