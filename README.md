@@ -3,7 +3,8 @@
 # Contents
 |Week|File name|Description|
 |--|-------|--------|
-|01||wee2.bank.py| Adds to user entered integers and ouputs them in euro and cents|
+|[01](# Week-1)|
+|wee2.bank.py| Adds to user entered integers and ouputs them in euro and cents|
 |03|week3.accounts.py|Hiding part of bank account numbers|
 |04|week4.collatz.py|Coding the collatz conjecture|
 |05|week5.weekday.py|Outputs whether today is a weekday or not and prints out appropriate text|
@@ -14,6 +15,7 @@
 
 # Projects
 ## Week 1
+#<a name="01"></a> Week 1
 ### Description
 ### Using the code
 ### References
