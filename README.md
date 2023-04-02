@@ -3,7 +3,7 @@
 # Contents
 |Week|File name|Description|
 |--|-------|--------|
-|[01](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#week-1)| lab1.1.1.helloworld.py|Prints out hello world|
+|[01](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#week-1---prints-out-hello-world)| week1.helloworld.py|Prints out "Hello World!"|
 |[02](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#week-2---adds-two-user-entered-amounts-and-prints-them-in-a-readable-format)|week2.bank.py| Adds two user entered integers and ouputs them in euro and cents|
 |[03](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#week-3---hiding-part-of-bank-account-numbers)|week3.accounts.py|Hiding part of bank account numbers|
 |[04](https://github.com/kknb1982/pands-problem-sheet/edit/main/README.md#week-4---coding-the-collatz-conjecture)|week4.collatz.py|Coding the collatz conjecture|
@@ -14,10 +14,13 @@
 
 
 # Projects
-## Week 1
+## Week 1 - Prints out Hello World!
 ### Description
-### Using the code
+This is a simple program to print out "Hello World!" when the script is run.
+`print("Hello World!")`
+
 ### References
+https://www.w3schools.com/python/ref_func_print.asp
 
 ## Week 2 - Adds two user entered amounts and prints them in a readable format
 ### Description
@@ -25,12 +28,17 @@ This program requests that the user enters two amounts in cents, adds these two 
 
 ### The code
 The program uses `input` to request the user enter the amounts and uses `int` to ensure these entries (`amount1` and `amount2` are recorded as integers. These integers are added together and then divided by 100 to make it euros and cents:
-`sum = amount1 + amount2
-total = int(sum)/100`
+
+    amount1 = int(input("Enter the first amount in cents: "))
+    amount2 = int(input ("Enter the second amount in cents: "))
+    sum = amount1 + amount2
+    total = int(sum)/100
+
 F string is used to format what is printed to the screen:
-`print (f"The sum of these is €{total}")`
+    print (f"The sum of these is €{total}")
 
 ### References
+https://www.geeksforgeeks.org/python-input-function/
 
 ## Week 3 - Hiding part of bank account numbers
 ### Description
@@ -117,6 +125,12 @@ https://www.w3schools.com/python/python_datetime.asp
 This programe uses the Newton method to estimate the square root of a number to a defined tolerance. The user is asked to input both the number to estimate the square root of and the tolerance.
 
 ### The code
+number = float(input ("Enter a number: "))
+tolerance = float(input("Enter the tolerance: "))
+
+while number < 0:
+    print (f"The number {number} is less than 0, please enter a positive number")
+
 `def square_root(number,tolerance):
     guess = number
         
@@ -127,8 +141,7 @@ This programe uses the Newton method to estimate the square root of a number to 
         guess = better_guess
 
 
-number = float(input ("Enter a number: "))
-tolerance = float(input("Enter the tolerance: "))
+
 
 best_guess = square_root(number,tolerance)
 print (f"The Newton approximation of the sqare root of {number} is {best_guess}")`
