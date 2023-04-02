@@ -35,6 +35,7 @@ The program uses `input` to request the user enter the amounts and uses `int` to
     total = int(sum)/100
 
 F string is used to format what is printed to the screen:
+    
     print (f"The sum of these is €{total}")
 
 ### References
@@ -46,14 +47,17 @@ This program reads in an account number and only shows the last 4 digits, the re
 
 ### The code
 The user is asked to enter an account number. The last four digits of the account number are then sliced from the entered account number and stored in a new variable called last_4_digits
+    
     bank_account_number = input("Please enter an account number: ")
     last_4_digits = bank_account_number[-4:]`
 
 To match the number of digits to display to the masked account number the code uses `len` to find the length of the bank account number and then takes 4 from this number to find the number of 'x's required.
+    
     number_of_xs = length_account_number - 4
     masked_digits = number_of_xs * 'x'
 
 An f string is used to print the correctly masked bank account number.
+    
     print (f"{masked_digits}{last_4_digits}")
 
 ### References
@@ -65,9 +69,11 @@ The Collatz conjecture states that if you start with a positive integer and divi
 
 ### The code
 First an empty list is recorded to store the outputs from the script.
+    
     numbers = []
         
 The user is prompted to input a positive integer. An integer greater than 1 is specifically requested as 1 is the stop point for the Collatz Conjecture.
+    
     number = int(input ("Please enter a positive integer greater than 1?: "))
     
 Code could be inserted at this point to ensure the entered number is not <1 or a float.
@@ -84,6 +90,7 @@ The script then starts a while loop to work through the Collatz Conjecture until
             numbers.append(int(number))
 
 Once the number 1 is reached all the numbers in the list are printed. An asterisk is added before the list name to print the list without brackets.
+    
     print(*numbers)
 
 ### References
@@ -101,7 +108,7 @@ The program imports the date from the python module datetime, calucates the day 
 First the date is imported from the Python module datetime 
 `from datetime import date`
 
-The today's date is recorded in a variable called today.
+Then today's date is recorded in a variable called today.
 `today = date.today()`
 
 The day is then recorded in a variable called today. 
