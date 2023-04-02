@@ -18,7 +18,7 @@ plt.hist (normal_data)
 
 # Power
 min = 0
-max = 10
+max = 11
 
 xpoints = np.array(range(min,max))
 ypoints = xpoints ** 3
