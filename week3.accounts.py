@@ -3,6 +3,8 @@
 # Author: Kirstin Barnett
 
 bank_account_number = input("Please enter an account number: ")
+
+# Strips the last 4 digits from the bank account numbergit pusll
 last_4_digits = bank_account_number[-4:]
 
 length_account_number = len(bank_account_number)
