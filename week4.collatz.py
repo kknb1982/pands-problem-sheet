@@ -10,7 +10,7 @@
 numbers = []
 
 # Asks for a positive integer to be input
-number = int(input ("Please enter a positive integer: "))
+number = int(input ("Please enter a positive integer greater than 1: "))
 
 # While number is not 1 this code is run to divide even numbers by 2 and odd numbers are multiplied by 3 plus 1. 
 # The outputs are added to the numbers list and stored as integers
