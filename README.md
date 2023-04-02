@@ -42,21 +42,19 @@ https://www.geeksforgeeks.org/python-input-function/
 
 ## Week 3 - Hiding part of bank account numbers
 ### Description
-This program reads in an account number and only shows the last 4 digits the rest replaced by x. If the entered account number is less than 5 digits then all the digits will be shown, foir security in real-life you would probably ensure an account number of at least 5 digits was entered.
+This program reads in an account number and only shows the last 4 digits, the rest replaced by x. If the entered account number is less than 5 digits then all the digits will be shown, for security, in real-life you would probably ensure an account number of at least 5 digits was entered.
 
 ### The code
-The user is asked to enter an account number. 
-`bank_account_number = input("Please enter an account number: ")`
+The user is asked to enter an account number. The last four digits of the account number are then sliced from the entered account number and stored in a new variable called last_4_digits
+    bank_account_number = input("Please enter an account number: ")
+    last_4_digits = bank_account_number[-4:]`
 
-The last four digits of the account number are then sliced from the entered account number and stored in a new variable called last_4_digits:
-`last_4_digits = bank_account_number[-4:]`
-
-To match the number of digits to display to the masked account number the code uses `len` to find the lenght of the bank account number and then takes 4 from this number to find the number of 'x's required.
-`number_of_xs = length_account_number - 4
-masked_digits = number_of_xs * 'x'`
+To match the number of digits to display to the masked account number the code uses `len` to find the length of the bank account number and then takes 4 from this number to find the number of 'x's required.
+    number_of_xs = length_account_number - 4
+    masked_digits = number_of_xs * 'x'
 
 An f string is used to print the correctly masked bank account number.
-`print (f"{masked_digits}{last_4_digits}")`
+    print (f"{masked_digits}{last_4_digits}")
 
 ### References
 https://www.w3schools.com/python/python_strings_slicing.asp 
