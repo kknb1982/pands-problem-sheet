@@ -7,13 +7,14 @@ def square_root(number,tolerance):
         
     while True: # iterates through guesses until tolerance is met
         better_guess = (guess + number/guess)/2
-        if abs (better_guess - guess) < tolerance:
+        if abs(better_guess - guess) < tolerance:
             return better_guess
         guess = better_guess
 
-# Checks a positive number has been entered
+# User enters the number to find the square root of
 number = float(input ("Enter a number: "))
 
+# Checks a positive number has been entered
 while number < 0:
     print(f"The number {number} is less than 0, please enter a positive number: ")
     number = float(input ("Enter a number: "))
