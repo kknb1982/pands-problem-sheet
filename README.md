@@ -35,6 +35,7 @@ The program uses `input` to request the user enter the amounts and uses `int` to
     total = int(sum)/100
 
 F string is used to format what is printed to the screen:
+    
     print (f"The sum of these is €{total}")
 
 ### References
@@ -46,14 +47,17 @@ This program reads in an account number and only shows the last 4 digits, the re
 
 ### The code
 The user is asked to enter an account number. The last four digits of the account number are then sliced from the entered account number and stored in a new variable called last_4_digits
+    
     bank_account_number = input("Please enter an account number: ")
     last_4_digits = bank_account_number[-4:]`
 
 To match the number of digits to display to the masked account number the code uses `len` to find the length of the bank account number and then takes 4 from this number to find the number of 'x's required.
+    
     number_of_xs = length_account_number - 4
     masked_digits = number_of_xs * 'x'
 
 An f string is used to print the correctly masked bank account number.
+    
     print (f"{masked_digits}{last_4_digits}")
 
 ### References
@@ -61,37 +65,40 @@ https://www.w3schools.com/python/python_strings_slicing.asp
 
 ## Week 4 - Coding the collatz conjecture
 ### Description
-The programe codes the Collatz conjecture by defining a function to run the Collatz conjecture and uses a while loop to record the numbers tested and stop the function once an output of 1 is calculated. The numbers run through the function are recorded in a list and printed once the script has completed.
+The Collatz conjecture states that if you start with a positive integer and divide even numbers by 2 and odd number are multiplied by 3 and 1 added and each solution is submitted to the same rules then you will eventually reach 1. The program does this using a while loop to keep iterating through the numbers until 1 is reched and then the solutions are printed.
 
 ### The code
-First an empty list is recorded to store the outputs from the script:
-`numbers = []`
-
-The a new function called collatz is defined. This function uses an `if` statement to divide an even number by 2 and odd numbers to be multiplied by 3 then 1 added. If for some reason the calculation cannot be completed then "Something went wrong will be printed".
-`def collatz(number):
-    if number  % 2 == 0:
-        return number //2
-    elif number % 2 != 0:
-        return number *3 + 1
-    else:
-        print ('Something went wrong')`
-        
-The user is prompted to input a positive integer.
-`number = int(input ("Please enter a positive integer?: "))`
-
-Then a while loop is created to exit the function once the number being tested in the function is 1. If the number is not equal to 1 then it is added to the numbers list and that number is then put through the collatz function.
-`while number != 1:
-    numbers.append(number)
-    number = collatz(number)`
+First an empty list is recorded to store the outputs from the script.
     
-There is an else statement to ensure that the number 1 is added to the list of numbers.
-`else:
-    numbers.append(number)`
+    numbers = []
+        
+The user is prompted to input a positive integer. An integer greater than 1 is specifically requested as 1 is the stop point for the Collatz Conjecture.
+    
+    number = int(input ("Please enter a positive integer greater than 1?: "))
+    
+Code could be inserted at this point to ensure the entered number is not <1 or a float.
 
-Once the number 1 is reached all the numbers in the list are printed:
-`print(*numbers)`
+The script then starts a while loop to work through the Collatz Conjecture until the answer 1 is reached. If the number is even `number % 2 == 0` then the number is divided by 2 and the resulting output stored in the numbers list. If the number is odd (basically not even in the code) then the number is multiplied by 3 and 1 added, the resulting output is stored in the list numbers. The number cycles through this code until it equals 1.
+
+    while number != 1:
+        if number % 2 == 0:
+            number = number / 2
+            numbers.append(int(number))
+    
+        else:
+            number = number *3 +1
+            numbers.append(int(number))
+
+Once the number 1 is reached all the numbers in the list are printed. An asterisk is added before the list name to print the list without brackets.
+    
+    print(*numbers)
 
 ### References
+https://en.wikipedia.org/wiki/Collatz_conjecture
+https://www.w3schools.com/python/python_lists.asp
+[https://medium.com/the-art-of-python/the-collatz-sequence-in-python-eb7e1f1b4f9e](https://www.w3schools.com/python/python_while_loops.asp)
+https://www.w3schools.com/python/python_conditions.asp
+https://www.javatpoint.com/how-to-print-a-list-without-brackets-in-python
 
 ## Week 5 - Using import to work out if today is a weekday
 ### Description
@@ -101,7 +108,7 @@ The program imports the date from the python module datetime, calucates the day 
 First the date is imported from the Python module datetime 
 `from datetime import date`
 
-The today's date is recorded in a variable called today.
+Then today's date is recorded in a variable called today.
 `today = date.today()`
 
 The day is then recorded in a variable called today. 
