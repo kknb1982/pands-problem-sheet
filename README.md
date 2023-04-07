@@ -186,56 +186,52 @@ This program opens a text file specificied by the user in the command line and c
 
 ### The code
 This program starts by importing the sys module and then bringing in the file name to be searched from the command line. `sys.argv[1]` denotes the second argument as the file to assign to the variable FILENAME.
- `import sys
-FILENAME = sys.argv[1]`
+
+    import sys
+    FILENAME = sys.argv[1]
 
 The character to be searched for is set in the variable character.
-`character = "e"`
+
+    character = "e"
 
 Then the function number is defined:
-`def number():
-    with open(FILENAME) as f:
-        data = f.read()
-        lower_case = data.lower()
-        occurences = lower_case.count(character)
-        return occurences`
+    def number():
+        with open(FILENAME) as f:
+            data = f.read()
+            lower_case = data.lower()
+            occurences = lower_case.count(character)
+            return occurences
         
 This function opens the file to be searched, reads in the text, converts it to lower case and then counts the number of times the variable `character` occurs.
 
-When opening the file to be searched a number of errors may be encountered so a series of try and except statements have been written. The `try` statement chacks that the file can be opened and read. If it can the program moves to the else statement. 
+When opening the file to be searched a number of errors may be encountered so a series of try and except statements have been written. The `try` statement checks that the file can be opened and read. If it can the program moves to the else statement. 
 
-`try:
-    with open(FILENAME) as f:
-        data = f.read()`
+    try:
+        with open(FILENAME) as f:
+            data = f.read()
 
 If the file cannot be found some helpful information is printed out to remind the user that if the file is not in same folder as programme the full address of the file is needed.
 
-`except FileNotFoundError:
-     print ("Check the spelling of the file name. \nIf the file is not in the same folder as the sys.py program please enter the full address of the file.")`
+    except FileNotFoundError:
+        print ("Check the spelling of the file name. \nIf the file is not in the same folder as the sys.py program please enter the full address of the file.")
      
 If a different type of error occurs the detail of the error is printed to the user:
-`except Exception as e:
-    print (f"Something has gone wrong. Here is the error information: \n{e}")`
+    except Exception as e:
+        print (f"Something has gone wrong. Here is the error information: \n{e}")
 
-If the file can be opened and read the else statement is run. This runs the `number` function and prints out the number of types the requested character occurs in the file.
+If the file can be opened and read the `else` statement is run. This runs the `number` function and prints out the number of types the requested character occurs in the file.
 
-`else:
-    number_of_es = number()
-    print (f"In the file {FILENAME} there are {number_of_es} occurences of the character '{character}'.")`
+    else:
+        number_of_es = number()
+        print (f"In the file {FILENAME} there are {number_of_es} occurences of the character '{character}'.")`
 
 ### References
-https://www.geeksforgeeks.org/how-to-read-from-a-file-in-python/
-https://stackoverflow.com/questions/1483429/how-do-i-print-an-exception-in-python
+[1] https://www.geeksforgeeks.org/how-to-read-from-a-file-in-python/
+
+[2] https://stackoverflow.com/questions/1483429/how-do-i-print-an-exception-in-python
 
 ## Week 8
 ### Description
 ### Using the code
 ### References
-2: Project Description
-- What the program/application is going does
-- Why you used certain codes (similar to the comments in the file - explain why you wrote it that way - shows you understand what code you used too)
-- What was difficult and what you would like to add in the future.
-3: Table of Contents (only if its very long code - eg: End of Semester Project)
-4: How to Run or Install the code - we dont need this probably until later
-5: How to use the code - Screenshots of the program running eg: picture of the code and what it results in
-6: References - any links from what you found when googling for help with code or when looking to see how things are coded. - Even qualified programmers/data analysts google a lot, and were not being told how to do everything because they're trying to teach us how to research as well.
+
