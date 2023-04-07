@@ -27,7 +27,7 @@ https://www.w3schools.com/python/ref_func_print.asp
 This program requests that the user enters two amounts in cents, adds these two numbers together and outputs them as €xxx.xx.
 
 ### The code
-The program uses `input` to request the user enter the amounts and uses `int` to ensure these entries (`amount1` and `amount2` are recorded as integers. These integers are added together and then divided by 100 to make it euros and cents:
+The program uses `input` to request the user enter the amounts and uses `int` to ensure these entries (`amount1` and `amount2` are recorded as integers). These integers are added together and then divided by 100 to make it euros and cents:
 
     amount1 = int(input("Enter the first amount in cents: "))
     amount2 = int(input ("Enter the second amount in cents: "))
@@ -102,56 +102,73 @@ https://www.javatpoint.com/how-to-print-a-list-without-brackets-in-python
 
 ## Week 5 - Using import to work out if today is a weekday
 ### Description
-The program imports the date from the python module datetime, calucates the day of the week from this and outputs whether today is a weekend day or not.
+The program imports the date from the python module datetime, calculates the day of the week from this and outputs whether today is a weekend day or not.
 
 ### The code
-First the date is imported from the Python module datetime 
-`from datetime import date`
+First the date is imported from the Python module `datetime` and `date.weekday()` is used to output the day of the week as an integer.  
 
-Then today's date is recorded in a variable called today.
-`today = date.today()`
+    from datetime import date
+    today = date.today()
+    day = today.weekday()
 
-The day is then recorded in a variable called today. 
-`day = today.weekday()`
+Then `if` and `else` statements are used to print different statements depending on if it is a week day or the weekend. A Saturday or Sunday would give a `today.weekday()` value of a 5 or a 6. Therefore, if it is a Saturday or Sunday the first statement is printed otherwise the other statement in the `else` statement is printed.
 
-This outputs the day as a number, Saturday is day 5 and Sunday is day 6. Therefore, if the variable day is greater than 4 it must be a weekend. An if statement is used to print a message if it is the weekend.
-`if day > 4:
-    print ("It is the weekend, yay!")`
-    
-Otherwise the program prints "Yes, unfortunately today is a weekday."
-`else:
-    print ("Yes, unfortunately today is a weekday.")`
+    if day > 4:
+        print ("It is the weekend, yay!")
+
+    else:
+        print ("Yes, unfortunately today is a weekday.")
 
 ### References
 https://www.w3schools.com/python/python_datetime.asp
+https://pynative.com/python-get-the-day-of-week/
+https://www.w3schools.com/python/python_conditions.asp
 
 ## Week 6 - Finds an approximation of the square root of a positive float number
 ### Description
 This programe uses the Newton method to estimate the square root of a number to a defined tolerance. The user is asked to input both the number to estimate the square root of and the tolerance.
 
 ### The code
-number = float(input ("Enter a number: "))
-tolerance = float(input("Enter the tolerance: "))
+Newton's method for estimating a square root says that the square root of any number (N) can be found by:
 
-while number < 0:
-    print (f"The number {number} is less than 0, please enter a positive number")
+> root = (X + (N / X)) / 2 where X is any guess which can be assumed to be N or 1. 
 
-`def square_root(number,tolerance):
-    guess = number
+This code uses `while` loops to iterate through "guesses" of the square root until the tolerance is met. This is done by defining a function called `square_root` which accepts two arguments the number to investigate the square root and the tolerance. The first step in the funcation sets the initial guess as the user entered number. Then a `while` loop is entered that iterates through the guesses. Each guess in turn is subjected to the Newton estimation method `(guess + number/guess)/2`. The output of this is then tested against the tolerance, if the tolerance is met or exceeded the `while` loop stops and the current estimate is returned.
+
+    def square_root(number,tolerance):
+        guess = number     
         
-    while True:
-        better_guess = (guess + number/guess)/2
-        if abs (better_guess - guess) < tolerance:
-            return better_guess
-        guess = better_guess
+        while True: 
+            better_guess = (guess + number/guess)/2
+            if abs(better_guess - guess) < tolerance:
+                return better_guess
+            guess = better_guess
 
+Now the function has been created the user is asked to input the arguments for the function. First the user is asked to enter a number to find the square root of. There is a `while` loop to ensure that re-prompts the user enters a number greater than 0 until an appropriate number is entered.
 
+    number = float(input ("Enter a number: "))
+    
+    while number < 0:
+        print(f"The number {number} is less than 0, please enter a positive number: ")
+        number = float(input ("Enter a number: "))
+  
+The same process is followed when getting the user to enter the tolerance. This time the while loop checks that a number less than 1 has been entered:
 
+    tolerance = float(input("Enter the tolerance: "))
 
-best_guess = square_root(number,tolerance)
-print (f"The Newton approximation of the sqare root of {number} is {best_guess}")`
+    while tolerance >= 1:
+        print("The tolerance must be less than 1.")
+        tolerance = float(input("Enter the tolerance: "))  
+
+When all the conditions are met an `else` statement calls the function with the correct arguments and prints out the result:
+    else:
+        best_guess = square_root(number,tolerance)
+        print (f"The Newton approximation of the square root of {number} is {best_guess}")
 
 ### References
+https://en.wikipedia.org/wiki/Newton%27s_method
+https://www.w3schools.com/python/python_while_loops.asp
+https://www.w3schools.com/python/ref_func_abs.asp
 
 ## Week 7 - Counting the occurence of a character in a file
 ### Description
