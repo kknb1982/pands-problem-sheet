@@ -12,9 +12,9 @@ hist_mean = 5
 hist_st_dev = 2
 number_of_values = 1000
 
-normal_data = np.random.normal(loc = hist_mean, scale = hist_st_dev, size = number_of_values)
+normal_data = np.random.normal(hist_mean, hist_st_dev, number_of_values)
 
-plt.hist (normal_data)
+plt.hist(normal_data)
 
 # Power
 min = 0
@@ -29,5 +29,5 @@ plt.plot(xpoints, ypoints, color = 'r')
 plt.title("Weekly task 8 - histogram of a normal distribution and line of x^3")
 plt.xlabel("x")
 plt.ylabel("y")
-plt.legend(["x to the power 3", "normal distribution",])
+plt.legend(['x to the power 3', 'normal distribution'])
 plt.show()
