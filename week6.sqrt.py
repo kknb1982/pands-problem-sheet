@@ -1,13 +1,6 @@
 # Finds an approximation of the square root of a positive float number
 # Author: Kirstin Barnett
 
-number = float(input ("Enter a number: "))
-tolerance = float(input("Enter the tolerance: "))
-
-# Checks a positive number has been entered
-while number < 0:
-    print (f"The number {number} is less than 0, please enter a positive number")
-
 #Defines the square root function
 def square_root(number,tolerance):
     guess = number      # set initial guess for the square root
@@ -18,6 +11,20 @@ def square_root(number,tolerance):
             return better_guess
         guess = better_guess
 
+# Checks a positive number has been entered
+number = float(input ("Enter a number: "))
+
+while number < 0:
+    print(f"The number {number} is less than 0, please enter a positive number: ")
+    number = float(input ("Enter a number: "))
+   
+tolerance = float(input("Enter the tolerance: "))
+
+while tolerance >= 1:
+    print("The tolerance must be less than 1.")
+    tolerance = float(input("Enter the tolerance: "))   
+    
 # runs the square root function and outputs the answer
-best_guess = square_root(number,tolerance)
-print (f"The Newton approximation of the sqare root of {number} is {best_guess}")
+else:
+    best_guess = square_root(number,tolerance)
+    print (f"The Newton approximation of the square root of {number} is {best_guess}")

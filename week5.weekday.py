@@ -6,6 +6,7 @@ from datetime import date
 today = date.today()
 day = today.weekday()
 
+day = 6
 # Saturday and Sunday are 5 and 6
 if day > 4:
     print ("It is the weekend, yay!")
