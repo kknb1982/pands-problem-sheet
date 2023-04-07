@@ -94,11 +94,16 @@ Once the number 1 is reached all the numbers in the list are printed. An asteris
     print(*numbers)
 
 ### References
-https://en.wikipedia.org/wiki/Collatz_conjecture
-https://www.w3schools.com/python/python_lists.asp
-[https://medium.com/the-art-of-python/the-collatz-sequence-in-python-eb7e1f1b4f9e](https://www.w3schools.com/python/python_while_loops.asp)
-https://www.w3schools.com/python/python_conditions.asp
-https://www.javatpoint.com/how-to-print-a-list-without-brackets-in-python
+[1] https://en.wikipedia.org/wiki/Collatz_conjecture
+
+[2] https://www.w3schools.com/python/python_lists.asp
+
+[3] [https://medium.com/the-art-of-python/the-collatz-sequence-in-python-eb7e1f1b4f9e](https://www.w3schools.com/python/python_while_loops.asp)
+
+[4] https://www.w3schools.com/python/python_conditions.asp
+
+[5] https://www.javatpoint.com/how-to-print-a-list-without-brackets-in-python
+
 
 ## Week 5 - Using import to work out if today is a weekday
 ### Description
@@ -120,9 +125,12 @@ Then `if` and `else` statements are used to print different statements depending
         print ("Yes, unfortunately today is a weekday.")
 
 ### References
-https://www.w3schools.com/python/python_datetime.asp
-https://pynative.com/python-get-the-day-of-week/
-https://www.w3schools.com/python/python_conditions.asp
+[1] https://www.w3schools.com/python/python_datetime.asp
+
+[2] https://pynative.com/python-get-the-day-of-week/
+
+[3] https://www.w3schools.com/python/python_conditions.asp
+
 
 ## Week 6 - Finds an approximation of the square root of a positive float number
 ### Description
@@ -166,9 +174,11 @@ When all the conditions are met an `else` statement calls the function with the 
         print (f"The Newton approximation of the square root of {number} is {best_guess}")
 
 ### References
-https://en.wikipedia.org/wiki/Newton%27s_method
-https://www.w3schools.com/python/python_while_loops.asp
-https://www.w3schools.com/python/ref_func_abs.asp
+[1] https://en.wikipedia.org/wiki/Newton%27s_method
+
+[2] https://www.w3schools.com/python/python_while_loops.asp
+
+[3] https://www.w3schools.com/python/ref_func_abs.asp
 
 ## Week 7 - Counting the occurence of a character in a file
 ### Description
