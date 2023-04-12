@@ -27,19 +27,25 @@ https://www.w3schools.com/python/ref_func_print.asp
 This program requests that the user enters two amounts in cents, adds these two numbers together and outputs them as €xxx.xx.
 
 ### The code
-The program uses `input` to request the user enter the amounts and uses `int` to ensure these entries (`amount1` and `amount2` are recorded as integers). These integers are added together and then divided by 100 to make it euros and cents:
+The program uses `input` to request the user enter the amounts and uses `int` to ensure these entries (`amount1` and `amount2` are recorded as integers). These integers are added together and converted to a string to allow slicing to be used to format the output as euros and cents:
 
     amount1 = int(input("Enter the first amount in cents: "))
     amount2 = int(input ("Enter the second amount in cents: "))
-    sum = amount1 + amount2
-    total = int(sum)/100
+    sum = str(amount1 + amount2)
 
-F string is used to format what is printed to the screen:
-    
-    print (f"The sum of these is €{total}")
+The slicing is done in two parts to create the euros and cents parts of the output. Negative slicing of the last two digits from the end gives the cents. Slicing everything but the last two digits gives the euros. I have calculated this by first working out the length of the string using `len` then taking 2 from this.
+
+    cents = sum[-2:]
+    euros = sum[:(len(sum)-2)]
+
+Then an f string is used to format what is printed to the screen:
+
+    print (f"The sum of these is €{euros}.{cents}")
 
 ### References
 https://www.geeksforgeeks.org/python-input-function/
+https://www.w3schools.com/python/python_strings_slicing.asp
+https://www.w3schools.com/python/python_strings.asp
 
 ## Week 3 - Hiding part of bank account numbers
 ### Description
