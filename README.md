@@ -230,8 +230,50 @@ If the file can be opened and read the `else` statement is run. This runs the `n
 
 [2] https://stackoverflow.com/questions/1483429/how-do-i-print-an-exception-in-python
 
-## Week 8
+## Week 8 - Creates a histogram and a line graph on one set of axes 
 ### Description
-### Using the code
-### References
+Creates a histogram of a 1000 values with a mean of 5 and standard deviation of 2, and a plot of the function  h(x)=x ** 3 in the range [0, 10], on one set of axes.
 
+### Using the code
+In order to create a plot first the `numpy` and `matplotlib` libraries are imported.
+
+    import numpy as np
+    import matplotlib.pyplot as plt
+
+Then the values for the histogram are entered and the `normal` function from `numpy` used to create 1,000 random entries in a nomrl distribution with a mean of 5 and a standard deviation of 2. I chose to define the variables for this function to make future modifications easier. These numbers could have been entered directly into the arguments field for `np.random.normal`. This data is 
+
+    hist_mean = 5
+    hist_st_dev = 2
+    number_of_values = 1000
+
+    normal_data = np.random.normal(hist_mean, hist_st_dev, number_of_values)
+
+    plt.hist (normal_data)
+
+The arguments for plotting "X^3" are then entered. The arguments in `range` in Python are the start value and the number before which to stop, therefore, the max value was increased by 1 to ensure that an x value of 10 was plotted. The plot was created with an array fitting the described range against x^3
+    min = 0
+    max = 11
+
+    xpoints = np.array(range(min,max))
+    ypoints = xpoints ** 3
+    
+To help this data show up better on the chart (as they are sharing axes) the argument "color = 'r'" was added, making the plotted line red.
+
+    plt.plot(xpoints, ypoints, color = 'r')
+
+The plot was then altered to show explanatory text on the axes, a legend and the chart title.
+
+    plt.title("Weekly task 8 - histogram of a normal distribution and line of x^3")
+    plt.xlabel("x")
+    plt.ylabel("y")
+    plt.legend(['x to the power 3', 'normal distribution'])
+    plt.show()
+    
+### References
+[1] https://www.w3schools.com/python/matplotlib_histograms.asp
+
+[2] https://www.w3schools.com/python/ref_func_range.asp
+
+[3] https://www.w3schools.com/python/matplotlib_plotting.asp
+
+[4] https://www.w3schools.com/python/matplotlib_labels.asp
